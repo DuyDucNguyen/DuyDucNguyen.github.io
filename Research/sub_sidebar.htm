@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+	div.small_text_size {
+	  font-size: 15px;
+	}
+</style>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+	<a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+	<div class="w3-container">
+		<h3 class="w3-padding-64"><b> Duy Duc <br> NGUYEN </b></h3>
+	</div>
+
+<div class="w3-bar-block">
+	<a href="../index.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Blog/News</a>
+	<a href="../about_me.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Me</a>
+	<button onclick="myAccFunc()" class="w3-bar-item w3-button w3-hover-white" > Research <i class="fa fa-caret-down"></i></button>
+  	<div id="demoAcc" class="w3-hide w3-white w3-card">
+		<a href="modelling.htm" class="w3-bar-item w3-button"> <div class="small_text_size">Modelling </div> </a>
+		<a href="simulations.htm" class="w3-bar-item w3-button"><div class="small_text_size">Simulations</div></a>
+		<a href="team.htm" class="w3-bar-item w3-button"><div class="small_text_size">Team</div></a>
+		<a href="publications.htm" class="w3-bar-item w3-button"><div class="small_text_size">Publication</div></a>
+	</div> 
+	<a href="../contact.htm" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+	
+</div>
+</nav>
+
+
+<script>
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-green";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-green", "");
+  }
+}
+
+function myDropFunc() {
+  var x = document.getElementById("demoDrop");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-green";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-green", "");
+  }
+}
+</script>
