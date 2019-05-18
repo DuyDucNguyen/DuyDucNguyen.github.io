@@ -4,8 +4,8 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"><title> Duy Duc NGUYEN </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="CSS/w3.css">
-<link rel="stylesheet" href="CSS/css.css">
+<link rel="stylesheet" href="Lib/w3.css">
+<link rel="stylesheet" href="Lib/css.css">
 
 <style>
 	body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
@@ -14,19 +14,30 @@
 	.w3-half img:hover{opacity:1}
 </style>
 
-<script src="CSS/jquery.js"></script> 
+<script src="Lib/jquery.js"></script> 
     <script> 
     $(function(){
       $("#include_sidebar").load("sidebar.htm"); 
     });
 </script> 
 
+<script src="Lib/jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#include_social_media_icons").load("Lib/social_media_icons.htm"); 
+    });
+</script> 
+
 </head>
 
-<body>
+<!-- Include icons -->
+<div id="include_social_media_icons"></div>
 
-<!-- Sidebar/menu -->
+<body>
+<!-- Include sidebar/menu -->
 <div id="include_sidebar"></div>
+
+
 
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
@@ -49,11 +60,12 @@
 		Phone: +33 7 52 91 85 16 <br>
 		Email: duyduc.nguyen@protonmail.com <br>
 		Address: LTMLab 17 Avenue des Martyrs, 38054 Grenoble, France <br>
-		LinkedIn: www.linkedin.com/in/duy-duc-nguyen
+		LinkedIn: <a href="www.linkedin.com/in/duy-duc-nguyen" class="fa fa-linkedin" target="popup"></a>
+			 
 	</p>
-
-
+	
 </div>
+
 
 <!-- End page content -->
 </div>
