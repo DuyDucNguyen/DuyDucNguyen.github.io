@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title> Duy Duc NGUYEN </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../Lib/w3.css">
+<link rel="stylesheet" href="../Lib/css.css">
+
+<style>
+	body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+	body {font-size:16px;}
+	.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+	.w3-half img:hover{opacity:1}
+</style>
+
+<script src="../Lib/jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#include_sidebar").load("sub_sidebar.htm"); 
+    });
+</script>
+
+<script src="../Lib/jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#include_social_media_icons").load("Lib/social_media_icons.htm"); 
+    });
+</script> 
+
+</head>
+
+
+
+
+<!-- Include icons -->
+<div id="include_social_media_icons"></div>
+
+
+
+
+<body>
+<!-- Sidebar/menu -->
+<div id="include_sidebar"></div>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span> Duy Duc NGUYEN </span>
+</header>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+	<!-- Header -->
+	<div class="w3-container" style="margin-top:80px" id="team">
+	<h1 class="w3-xxxlarge w3-text-red"><b> Teams </b></h1>
+	</div>
+
+	<p>
+	[2017-now]: <br>
+	Professor <a href="http://ltmlab.fr/blog/directory/tortai-jean-herve/" target="popup">Jean-Herve Tortai</a>, LTMLab, Grenoble, France <br>
+	Dr <a href="https://www.aselta.com/index.php?option=com_k2&view=item&layout=item&id=23&Itemid=515" target="popup">Patrick Schiavone</a>, Aselta Nanographics, Grenoble, France <br>
+	<br>
+	[2013-2017]: <br>
+	Professor <a href="http://members.femto-st.fr/michel-lenczner/" target="popup">Michel Lenczner</a>, FEMTO-ST, Besancon, France <br>
+	Professor <a href="https://www.femto-st.fr/en/femto-people/nicolasratier" target="popup">Nicolas Ratier</a>, FEMTO-ST, Besancon, France <br>
+	Professor <a href="https://www.lam.fr/intranet/ancienne-rubrique/people/article/frederic-zamkotsian?lang=fr" target="popup">Frederic Zamkotsian</a>, LAM, Marseilles, France</p>
+
+	<!-- Team Container -->
+	<h1 class="w3-xlarge w3-text-red"><b>VST (my buddies)</b></h1>
+	<div class="w3-container  w3-center" id="team">
+	<div class="w3-row"><br>
+		<div class="w3-quarter">
+		<a href="https://www.linkedin.com/in/duy-duc-nguyen/" target="popup"> <img src="../Pictures/DuyDucNguyen_zoom.jpg" alt="Duc" style="width:45%" class="w3-circle w3-hover-opacity"> </a>
+		<h3>Duy Duc NGUYEN </h3> 
+		<p>PhD in Mechanical Engineering</p> 
+		</div>
+
+		<div class="w3-quarter">
+		  <a href="https://www.linkedin.com/in/vdnguyen85/" target="popup"> <img src="../Pictures/DangNguyen.jpeg" alt="Dang" style="width:45%" class="w3-circle w3-hover-opacity"> </a>
+		  <h3>Van Dang NGUYEN</h3>
+		  <p>PhD in Applied Mathematics <br> PhD in Computer Sciences </p>
+		</div>
+
+		<div class="w3-quarter">
+		  <a href="https://www.linkedin.com/in/khieunguyen/" target="popup"> <img src="../Pictures/KhieuNguyen.jpeg" alt="Khieu" style="width:45%" class="w3-circle w3-hover-opacity"> </a>
+		  <h3>Van Khieu NGUYEN</h3>
+		  <p>Ph.D. in Imaging and Medical Physics</p>
+		</div>
+
+		<div class="w3-quarter">
+		  <a href="https://www.linkedin.com/in/trinh-nguyen-nhat-binh-40473b12a/"  target="popup"> <img src="../Pictures/BinhNguyen.jpeg" alt="Binh" style="width:45%" class="w3-circle w3-hover-opacity"></a>
+		  <h3>Nhat Binh TRINH-NGUYEN</h3>
+		  <p>PhD in Mechanical Engineering</p>
+		</div>
+	</div>
+	</div>
+	<p><i>"Our mission is to introduce Modelling and Simulation to everyone in most practical way, escpecially to Vietnamese students. We use open-sources such as FEniCS (FEM), Paraview, Gmsh, FreeCAD and Python. Our scope covers a wide aspect of industrial problems like CFD, semiconductor, plasma, MRI and MEMS. All of us have BS in pure Mathematics, MS in Applied Mathematics and PhD in Applied Mathematics." </i> <br>-- For more detail about each of us, please click the portrait picture. <br>-- For more information about our team and project, please click here (coming soon)</p>
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+
+
+</body></html>
