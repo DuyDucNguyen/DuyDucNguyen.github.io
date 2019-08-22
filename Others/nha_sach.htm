@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>Duy Duc NGUYEN</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title> Duy Duc NGUYEN </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="Lib/w3.css">
-<link rel="stylesheet" href="Lib/css.css">
-
-
+<link rel="stylesheet" href="../Lib/w3.css">
+<link rel="stylesheet" href="../Lib/css.css">
 
 <style>
 	body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
@@ -17,25 +14,19 @@
 	.w3-half img:hover{opacity:1}
 </style>
 
-
-<script src="Lib/jquery.js"></script> 
+<script src="../Lib/jquery.js"></script> 
     <script> 
     $(function(){
-      $("#include_sidebar").load("sidebar.htm"); 
+      $("#include_sidebar").load("sub_sidebar.htm"); 
     });
 </script> 
+
 </head>
 
-
 <body>
+
 <!-- Sidebar/menu -->
 <div id="include_sidebar"></div>
-
-<div w3-include-html="test.html"></div> 
-
-
-
-
 
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
@@ -47,23 +38,34 @@
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 
+
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 	<!-- Header -->
 	<div class="w3-container" style="margin-top:80px" id="research">
-	<h1 class="w3-xxxlarge w3-text-red"><b> Blog/News </b></h1>
+	<h1 class="w3-xxxlarge w3-text-red"><b>Nhà sách</b></h1>
 	<!-- Text -->
-	<p>	
-		[07-2019] Start plasma simulation <br>
-		[06-2019] <a href=Others/french.htm target="popup"><font color="blue">French</font></a>  <br>
-		[06-2019] Start SEM simulation with interface <br>
-		[05-2019] Start wind-turbine <br>
-	</p>
-</div>
+	<p>
+	
+	<strong>NS Văn Thành:</strong> 411 Hoàng Sa, Phường 8, Quận 3 <br> 
+	<strong>NS Hà Nôi:</strong> 245 Nguyễn Thị Minh Khai, Phường Nguyễn Cư Trinh, Quận 1 <br>
+	<strong>NS Ngọc Linh:</strong> Bên hông Thiền Viện Quảng Đức, Văn Phòng 2 TUGHPGViệt Nam 294 Nam Kỳ Khởi Nghĩa, chạy vô hiểm, gặp ngã tư đầu tiên quẹo trái <br>
+	<strong>Ban Văn Hóa-Tổ In Ấn & Phát Hành Kinh Sách, GHPG VIỆT NAM:</strong> 294 Nam Kỳ Khởi Nghĩa, P.8 Q.3, chạy vô hiểm như nhà sách Ngọc Linh, mà quẹo bên phải <br>
 
+	<br>
+
+	<strong>Online</strong> <br>
+ 	tiki <br>
+	fahasa <br>
+	davibooks <br>
+	</p>
+
+
+</div>
 
 <!-- End page content -->
 </div>
+
 
 <script>
 // Script to open and close sidebar
@@ -85,6 +87,7 @@ function onClick(element) {
   captionText.innerHTML = element.alt;
 }
 </script>
+
 
 
 </body></html>
