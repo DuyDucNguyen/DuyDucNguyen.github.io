@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title> Duy Duc NGUYEN </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../Lib/w3.css">
+<link rel="stylesheet" href="../Lib/css.css">
+
+<style>
+    body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+    body {font-size:16px;}
+    .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+    .w3-half img:hover{opacity:1}
+</style>
+
+<script src="../Lib/jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#include_sidebar").load("sub_sidebar.htm"); 
+    });
+</script>
+
+<style>
+.newspaper {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Sidebar/menu -->
+<div id="include_sidebar"></div>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span> Duy Duc NGUYEN </span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="research">
+    <h1 class="w3-xxxlarge w3-text-red"><b> Simulations </b></h1>
+    <!-- Text -->
+
+
+    <h1 class="w3-xlarge w3-text-red"><b>2017-2019 Scanning Electron Microscope </b></h1>
+    <strong>Keywords:</strong> Semiconductor device simulation, vacuum device simulation, electron beam, SEM image, charging effect, secondary electron emission, FEM, Fenics
+    <br>
+    <strong>Summary:</strong> Electron beam scans the specimen from the left to the right, from the top to the bottom. Secondary electrons emission are collected and used to generate SEM image. The image is affected by negative or positive charges. For more detail, please read my publications in 2018 <a href=Pub/Conferences/nguyen2018.pdf target="popup"><font color="blue">[PDF]</font></a> and 2019 <a href=Pub/Conferences/nguyen2019.pdf target="popup"><font color="blue">[PDF]</font></a>.  
+    <br>
+    <strong>2D simulations:</strong>
+    <br>
+    <div class="w3-row-padding w3-padding-16 w3-center" id="2D Scanning SEM">
+        <img src="Video_SEM/n_Si_v3_15s.gif" alt="2D Si Scan" width="600" >
+        <p>Electron beam scans Si sample</p>
+        <img src="Video_SEM/n_SiO2_v3_15s.gif" alt="2D SiO2 Scan" width="600" >
+        <p>Electron beam scans SiO2 sample</p>
+        <img src="Video_SEM/E_Si_v3_15s.gif" alt="2D E Si Scan" width="600" >
+        <p>Electrical field during the scanning. Secondary electrons drift toward the electrical field</p>
+        </div>
+
+    <strong>Secondary Electron Emission signal</strong>
+    <div class="w3-row-padding w3-padding-16 w3-center" id="2D SEE">
+        <img src="Video_SEM/2Dsee_Si_3pats_v3.png" alt="2D Si SEE" width="400" >
+        <img src="Video_SEM/2Dsee_SIO2_3pats_v3.png" alt="2D SiO2 SEE" width="400" >
+        <p>SEE signals from scanning Si and SiO2 samples</p>
+        </div>
+
+    <strong>2D SEM images</strong>
+    <div class="w3-row-padding w3-padding-16 w3-center" id="2D SEM images">
+        <img src="Video_SEM/2DSEM_Si_3pats_v3.png" alt="2D Si SEM images" width="400" >
+        <img src="Video_SEM/2DSEM_SiO2_3pats_v3.png" alt="2D SiO2 SEM images" width="400" >
+        <p>SEM images generated SEE signals</p>
+        </div>
+
+    <strong>3D simulations:</strong>
+    <br>
+    <div class="w3-row-padding w3-padding-16 w3-center" id="3D Scanning SEM">
+        <img src="Video_SEM/3DSEM_n_SIO2SIO2.gif" alt="3D Si Scan" width="600" >
+        <p>Electron beam scans Si sample</p>
+        <img src="Video_SEM/3DSEM_n_SIO2SIO2.gif" alt="3D SiO2 Scan" width="600" >
+        <p>Electron beam scans SiO2 sample</p>
+        </div>
+    <strong>Mesh participations:</strong>
+    <br>
+    <div class="w3-row-padding w3-padding-16 w3-center" id="SEM geometries">
+        <img src="Pic_SEM/mesha.png" alt="distributed mesh p1" width="200" height="140">
+        <img src="Pic_SEM/meshb.png" alt="distributed mesh p1" width="200" height="140">
+        <img src="Pic_SEM/mesh_p1.png" alt="distributed mesh p1" width="200" height="140">
+        <img src="Pic_SEM/mesh_p2.png" alt="distributed mesh p2" width="200" height="140">
+        <img src="Pic_SEM/mesh_p3.png" alt="distributed mesh p3" width="200" height="140">
+        <p>Geometry of a specimen with a pattern in total and in partition for parallel computing</p>
+        </div>
+
+    <strong>SEM images:</strong>
+    <div class="w3-row-padding w3-padding-16 w3-center" id="3D SEM images">
+        <img src="Video_SEM/SEM_SiSi.png" alt="3D Si SEM images" width="400" >
+        <img src="Video_SEM/SEM_SiO2SiO2.png" alt="3D SiO2 SEM images" width="400" >
+        <p>SEM images generated SEE signals</p>
+        </div>
+</div>
+
+
+
+
+
+<!-- End page content -->
+</div>
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+
+
+</body></html>
